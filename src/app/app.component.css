@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+
+    background-color: lightblue ;
+    min-height: 1000px;
+}
+div {
+    width: 300px;
+    margin: 0 auto;
+}
+h2 {
+    font-family: sans-serif;
+    color:darkblue;
+    
+}   
+
+input {
+    border-radius: 7px;
+    width: 150px;
+    text-align: center;
+    border-color: darkblue;
+    margin: 0 5px;
+}
+button {
+    background-color: cornflowerblue;
+    border-color: darkblue;
+}

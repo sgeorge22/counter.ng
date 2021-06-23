@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'counter';
+  num: number = 0;
+  inpClas: string = "";
+
+  change(amount: number): void{
+    this.num += amount;
+    this.display();
+  }
+  display(): void {
+    this.inpClas = "";
+    if(this.num % 2 == 0) this.inpClas += " text-danger ";
+    if(this.num % 3 == 0) this.inpClas += " fw-bold ";
+    if(this.num % 7 == 0) this.inpClas += " fst-italic "
+    
+  }
+
 }
